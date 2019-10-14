@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Student Messege Remover (JIC)",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["*://edugate.jic.edu.sa/*/ui/student/*"],
+      "run_at": "document_end",
+      "js": ["content.js"]
+    }
+  ]
+}
